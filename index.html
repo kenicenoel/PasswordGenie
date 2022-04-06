@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+        <script defer src="assets/app.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Genie</title>
+    </head>
+
+    <body onload="setPasswordLength()">
+        <div class="container">
+            <div class="card">
+                <header>This is your password</header>
+                <div class="card__passwordContainer">
+                    <input type="text" id="card__password-field">
+                    <div class="card__btn" onclick="generatePassword()">
+                        <img src="assets/images/board-game.svg" alt="Board Game">
+                    </div>
+                </div>
+                <div class="card__password-options">
+
+                    <div class="card__password-options__container">
+                        <input type="range" id="passwordLength" name="passwordLength" min="5" max="25" value="8"
+                            oninput="setPasswordLength()">
+                        <label id="passwordLength__label" for="passwordLength"></label>
+                    </div>
+
+                    <div class="card__password-options__container">
+                        <input id="useCapitalLetters" type="checkbox" checked>
+                        <label for="useCapitalLetters"> Include capital letters</label>
+                    </div>
+                    <div class="card__password-options__container">
+                        <input id="useCommonLetters" type="checkbox" checked>
+                        <label for="useCommonLetters">
+                            Include common letters
+                        </label>
+                    </div>
+
+                    <div class="card__password-options__container">
+                        <input id="useNumbers" type="checkbox" checked>
+                        <label for="useNumbers">Include numbers</label>
+                    </div>
+                    <div class="card__password-options__container">
+                        <input id="useSpecialChars" type="checkbox" checked>
+                        <label for="useSpecialChars"> Include special characters</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
