@@ -7,14 +7,14 @@
 :root {
     --primary-bg: #ffffff;
     --card-bg: #f4f4f4;
-    --primary-accent: #f0f031;
+    --primary-accent: #f7f72b;
     --password-fontsize: 25px;
     --password-color: #111;
 }
 
 body {
     background: var(--primary-bg);
-    color: #fff;
+    color: #111;
     font-family: 'Roboto', sans-serif;
 }
 
