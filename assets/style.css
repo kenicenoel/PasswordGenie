@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-bg: #1f1c1c;
-    --card-bg: #75727254;
+    --primary-bg: #ffffff;
+    --card-bg: #f4f4f4;
     --primary-accent: #f0f031;
     --password-fontsize: 25px;
     --password-color: #111;
